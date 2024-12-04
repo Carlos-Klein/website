@@ -1,0 +1,360 @@
+/* DESIGN TOTAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para a imagem do logo */
+header .log img {
+    max-width: 70%;
+    height: auto;
+}
+
+body {
+    background-color: #aca775;
+    height: 100vh; /* Ajustado para ocupar a altura total da viewport */
+    font-family: Arial, sans-serif;
+}
+
+/* Interface e Layout */
+.interface {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão de contato */
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #1E90FF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0 0 8px #052647;
+    transform: scale(1.10);
+}
+
+/* Títulos */
+h2.titulo, h1.titulo {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+h2.titulo {
+    font-size: 38px;
+}
+
+h2.titulo span, h1.titulo span {
+    color: #0ff;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Cards */
+.offer-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.offer-card img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Tabelas */
+.col {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+}
+
+.more-info-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-info-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #0d0d0d;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header a:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Topo do site */
+section.topo-site {
+    padding: 40px 4%;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+/* Estilo das vagas */
+section.estagio {
+    padding: 40px 4%;
+}
+
+.estagio .estagio-box {
+    color: #FFFFFF;
+    padding: 50px;
+    text-align: center;
+}
+
+.estagio .estagio-box img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Sobre o site */
+section.sobre {
+    padding: 40px 4%;
+}
+
+.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #FFFFFF;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* Botões sociais */
+.sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: aqua;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sobre .btn-social button:hover {
+    background-color: #00ffff;
+    transform: scale(1.1);
+}
+
+/* Estilo do formulário */
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #0d0d0d;
+    font-size: 20px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 500px;
+}
+
+form .btn-enviar {
+    margin-top: 40px;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #1E90FF;
+    color: #0d0d0d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form .btn-enviar input:hover {
+    background-color: #1C86EE;
+    transform: scale(1.1);
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 180px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 7px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.7); /* Aumenta a imagem em 70% */
+}
+
+.footer-bottom {
+    text-align: center;
+}
